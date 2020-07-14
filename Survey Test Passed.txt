@@ -1,0 +1,181 @@
+Survey Form
+
+HTML:
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="survey.css" type="text/css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+
+        <title>Survey</title>
+    </head>
+    <body>
+        
+        <header>
+            <h1 id="title">Welcome To Travel Lodge</h1>
+        </header>
+        <div class="subtitle">
+            <p id="description">Please fill out the form below and we will get you on your way!!</p>
+        </div>
+        <main>
+            <form id="survey-form" action="submit">
+                <div class='inputs'>
+            <label id="name-label"> Name:
+            <input type="text" id="name" placeholder="    Enter Your Name" required/> 
+            </label>
+            <br>
+            <br>
+            <label id="email-label"> Email:
+            <input type="email" id="email" placeholder="   YourEmail@company.com"  required/>
+            </label>
+            <br>
+            <br>
+            <label id="number-label"> Age (Optional):
+            <br>
+            <input type="number" id="number" placeholder="   18"  pattern="^[0–9]$" min=18 max=65/>
+            </label>
+            <br>
+            <br>
+            <label> Where Are You Going?
+                <br>
+            <select id="dropdown"> 
+                <option value="option1">Choose a Destination</option>
+                <option value="option2">San Francisco</option>
+                <option value="option3">New York</option>
+                <option value="option4">Miami</option>
+                <option value="option5">Chicago</option>
+            </select>
+            </label>
+            <br>
+            <br>
+            <legend> Choose An Airline:
+            <br>
+            <br>
+            <label> 
+                <input type="radio" name="radio" value="United" > United Airlines
+            </label>
+            <br>
+            <br>
+            <label> 
+                <input type="radio" name="radio" value="American"> American Airlines
+            </label>
+            <br>
+            <br>
+            <label> 
+                <input type="radio" name="radio" value="canada"> Air Canada
+            </label>
+            </legend>
+            <br>
+            <br>
+            <legend> Dietary Restrictions:
+            <br>
+            <br>
+            <label>
+                <input type="checkbox" name="checkbox1" value=" "> Vegan
+            </label>
+            <br>
+            <br>
+            <label>
+                <input type="checkbox" name="checkbox2" value=" "> Gluten-Free
+            </label>
+            <br>
+            <br>
+            <label>
+                <input type="checkbox" name="checkbox3" value=" "> Pescatarian
+            </label>
+            <br>
+            <br>
+            <label>
+                <input type="checkbox" name="checkbox4" value=" "> None
+            </label>
+            <br>
+            <br>
+            </legend>
+            <label for="textarea">
+            <textarea rows="10" cols="50">--Additional Comments or Requests--</textarea>
+            </label>
+            <br>
+            <br>
+            <button id="submit">Submit</button>
+                </div>
+            </form>
+            </main>
+        </div>
+        
+    </body>
+</html>
+
+CSS:
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#survey-form {
+    border: 3px solid blue;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    top: 75px;
+    border-radius: 25px;
+    background-color: rgb(224, 221, 221, 0.8);
+}
+
+[type='text'],
+[type='email'] {
+    width: 90%;
+    height: 35px;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    position: relative;
+    right: 15px;
+}
+
+#submit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: 30px;
+}
+
+#description {
+    display: block;
+    position: relative;
+    top: 30px;
+    width: 75%;
+    left: 135px;
+    font-size: 22px;
+    font-family: 'sniglet';
+}
+
+h1 {
+    position: relative;
+    left: 110px;
+    top: 15px;
+    font-size: 50px;
+    font-family: 'Comfortaa';
+}
+
+body {
+    background: url('AA1.jpg');
+    background-size: cover;
+    background-position: center right;
+}
+
+

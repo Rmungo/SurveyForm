@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#survey-form {
+    border: 3px solid blue;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    top: 75px;
+    border-radius: 25px;
+    background-color: rgb(224, 221, 221, 0.8);
+}
+
+[type='text'],
+[type='email'] {
+    width: 90%;
+    height: 35px;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    position: relative;
+    right: 15px;
+}
+
+#submit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: 30px;
+}
+
+#description {
+    display: block;
+    position: relative;
+    top: 30px;
+    width: 75%;
+    left: 135px;
+    font-size: 22px;
+    font-family: 'sniglet';
+}
+
+h1 {
+    position: relative;
+    left: 110px;
+    top: 15px;
+    font-size: 50px;
+    font-family: 'Comfortaa';
+}
+
+body {
+    background: url('AA1.jpg');
+    background-size: cover;
+    background-position: center right;
+}

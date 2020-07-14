@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="survey.css" type="text/css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+
+        <title>Survey</title>
+    </head>
+    <body>
+        
+        <header>
+            <h1 id="title">Welcome To Travel Lodge</h1>
+        </header>
+        <div class="subtitle">
+            <p id="description">Please fill out the form below and we will get you on your way!!</p>
+        </div>
+        <main>
+            <form id="survey-form" action="submit">
+                <div class='inputs'>
+            <label id="name-label"> Name:
+            <input type="text" id="name" placeholder="    Enter Your Name" required/> 
+            </label>
+            <br>
+            <br>
+            <label id="email-label"> Email:
+            <input type="email" id="email" placeholder="   YourEmail@company.com"  required/>
+            </label>
+            <br>
+            <br>
+            <label id="number-label"> Age (Optional):
+            <br>
+            <input type="text" id="number" placeholder="   18"  pattern="^[0–9]$" min=18 max=65/>
+            </label>
+            <br>
+            <br>
+            <label> Where Are You Going?
+                <br>
+            <select id="dropdown"> 
+                <option value="option1">Choose a Destination</option>
+                <option value="option2">San Francisco</option>
+                <option value="option3">New York</option>
+                <option value="option4">Miami</option>
+                <option value="option5">Chicago</option>
+            </select>
+            </label>
+            <br>
+            <br>
+            <legend> Choose An Airline:
+            <br>
+            <br>
+            <label> 
+                <input type="radio" name="radio"> United Airlines
+            </label>
+            <br>
+            <br>
+            <label> 
+                <input type="radio" name="radio"> American Airlines
+            </label>
+            <br>
+            <br>
+            <label> 
+                <input type="radio" name="radio"> Air Canada
+            </label>
+            </legend>
+            <br>
+            <br>
+            <legend> Dietary Restrictions:
+            <br>
+            <br>
+            <label>
+                <input type="checkbox" name="checkbox1" value=" "> Vegan
+            </label>
+            <br>
+            <br>
+            <label>
+                <input type="checkbox" name="checkbox2" value=" "> Gluten-Free
+            </label>
+            <br>
+            <br>
+            <label>
+                <input type="checkbox" name="checkbox3" value=" "> Pescatarian
+            </label>
+            <br>
+            <br>
+            <label>
+                <input type="checkbox" name="checkbox4" value=" "> None
+            </label>
+            <br>
+            <br>
+            </legend>
+            <label for="textarea">
+            <textarea rows="10" cols="50">--Additional Comments or Requests--</textarea>
+            </label>
+            <br>
+            <br>
+            <button id="submit">Submit</button>
+                </div>
+            </form>
+            </main>
+        </div>
+        
+    </body>
+</html>
